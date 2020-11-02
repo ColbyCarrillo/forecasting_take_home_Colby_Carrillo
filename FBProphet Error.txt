@@ -1,0 +1,48 @@
+Building wheels for collected packages: fbprophet
+  Building wheel for fbprophet (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/local/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-tso5mauo/fbprophet/setup.py'"'"'; __file__='"'"'/tmp/pip-install-tso5mauo/fbprophet/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-dpcsny00
+       cwd: /tmp/pip-install-tso5mauo/fbprophet/
+  Complete output (15 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib
+  creating build/lib/fbprophet
+  creating build/lib/fbprophet/stan_model
+  DIAGNOSTIC(S) FROM PARSER:
+  Warning: left-hand side variable (name=cp_idx) occurs on right-hand side of assignment, causing inefficient deep copy to avoid aliasing.
+  Warning: left-hand side variable (name=m_pr) occurs on right-hand side of assignment, causing inefficient deep copy to avoid aliasing.
+  
+  INFO:pystan:COMPILING THE C++ CODE FOR MODEL anon_model_dfdaf2b8ece8a02eb11f050ec701c0ec NOW.
+  /usr/local/lib/python3.7/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /tmp/tmppyf_kcsk/stanfit4anon_model_dfdaf2b8ece8a02eb11f050ec701c0ec_8592998463178935452.pyx
+    tree = Parsing.p_module(s, pxd, full_module_name)
+  error: command 'gcc' failed with exit status 1
+  ----------------------------------------
+  ERROR: Failed building wheel for fbprophet
+  Running setup.py clean for fbprophet
+Failed to build fbprophet
+Installing collected packages: fbprophet
+    Running setup.py install for fbprophet ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/local/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-tso5mauo/fbprophet/setup.py'"'"'; __file__='"'"'/tmp/pip-install-tso5mauo/fbprophet/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-olm5ji8c/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/include/python3.7m/fbprophet
+         cwd: /tmp/pip-install-tso5mauo/fbprophet/
+    Complete output (15 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib
+    creating build/lib/fbprophet
+    creating build/lib/fbprophet/stan_model
+    DIAGNOSTIC(S) FROM PARSER:
+    Warning: left-hand side variable (name=cp_idx) occurs on right-hand side of assignment, causing inefficient deep copy to avoid aliasing.
+    Warning: left-hand side variable (name=m_pr) occurs on right-hand side of assignment, causing inefficient deep copy to avoid aliasing.
+    
+    INFO:pystan:COMPILING THE C++ CODE FOR MODEL anon_model_dfdaf2b8ece8a02eb11f050ec701c0ec NOW.
+    /usr/local/lib/python3.7/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /tmp/tmp33xnx6lg/stanfit4anon_model_dfdaf2b8ece8a02eb11f050ec701c0ec_4829208358661110224.pyx
+      tree = Parsing.p_module(s, pxd, full_module_name)
+    error: command 'gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/local/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-tso5mauo/fbprophet/setup.py'"'"'; __file__='"'"'/tmp/pip-install-tso5mauo/fbprophet/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-olm5ji8c/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/include/python3.7m/fbprophet Check the logs for full command output.
